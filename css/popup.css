@@ -1,0 +1,254 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html
+{
+	overflow: hidden; /*make sure scrollbars don't show up no matter what*/
+}
+
+html, body
+{
+	height: 100%;
+	font-family: Helvetica, Arial, "Lucida Grande", Verdana, Geneva, sans-serif;
+	Helvetica, Arial, , sans-serif; 
+	   font-weight: 300;
+}
+
+@font-face {
+	font-family:'LeagueGothicRegular';
+	src:url('../fonts/league_gothic-webfont.eot');
+	src:local('League Gothic'), 
+	    local('LeagueGothic'), 
+	    url('../fonts/league_gothic-webfont.woff') format('woff'), 
+	    url('../fonts/league_gothic-webfont.ttf') format('truetype'), 
+	    url('../fonts/league_gothic-webfont.svg#webfontotxDVzWZ') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}     
+
+body
+{
+	background-image:url('../images/popup-bg.png');
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 460px;
+}
+
+.pop-top
+{
+	height: 174px; /*CORRECT*/
+	width: 395px;   /*CORRECT*/
+	
+	background: #F7F7F7;
+	background: -moz-linear-gradient(top, #FAFAFA, #F1F1F1);
+	background: -webkit-linear-gradient(top, #FAFAFA, #F1F1F1);
+	background: linear-gradient(top, #FAFAFA, #F1F1F1);
+	
+	border: 1px solid #D8D8D8;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	-moz-box-shadow: 2px 2px 6px 0px #999999;
+	-webkit-box-shadow: 2px 2px 6px 0px #999999;
+	box-shadow: 2px 2px 6px 0px #999999;
+	
+
+
+	margin: 20px 0px 8px 30px;  /*CORRECT*/
+	
+	behavior: url(PIE/PIE.htc);
+}
+
+	.pop-top .pop-title-info
+	{
+		height: 39px;
+		width: 413px;
+		line-height:40px;
+
+		background: #F7F7F7;
+		background: -moz-linear-gradient(top, #FAFAFA, #F1F1F1);
+		background: -webkit-linear-gradient(top, #FAFAFA, #F1F1F1);
+		background: linear-gradient(top, #FAFAFA, #F1F1F1);
+
+		border: 1px solid #D8D8D8;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+
+		-moz-box-shadow: 2px 2px 6px 0px #999999;
+		-webkit-box-shadow: 2px 2px 6px 0px #999999;
+		box-shadow: 2px 2px 6px 0px #999999;
+		
+		margin: 17px 0px 0px -10px;		
+	}
+	
+		
+		.pop-top .pop-title-info .pop-couponInfo
+		{ 
+			color: #0D65AC;
+			float: left;
+			border-right:1px solid #D8D8D8;
+			padding:0px 12px 0px 12px;
+			margin-right:12px;
+		}
+		.pop-top .pop-title-info .pop-storeName
+		{
+			color: #0E65AC;		
+		}
+
+	
+	.pop-top .pop-code 
+	{
+		margin-top:20px;
+		color: #668C1F;
+		font-family: 'LeagueGothicRegular', "Trebuchet MS", Helvetica, Arial, "Lucida Grande", Verdana, Geneva, sans-serif;
+		text-align: center;
+	
+	}
+		
+
+		.pop-top .pop-code-descript
+		{
+
+			text-align: center;
+			color: #545454;
+			font-size:15px;
+			font-family: "Trebuchet MS", Helvetica, Arial, "Lucida Grande", Verdana, Geneva, sans-serif;
+			font-style: italic;
+			margin-top: 11px;
+		}
+	
+.pop-bottom
+{
+	width:395px;  /*CORRECT*/
+	height: 72px;  /*CORRECT*/
+	
+	
+	background: #F7F7F7;
+	background: -moz-linear-gradient(top, #FAFAFA, #F1F1F1);
+	background: -webkit-linear-gradient(top, #FAFAFA, #F1F1F1);
+	background: linear-gradient(top, #FAFAFA, #F1F1F1);
+	
+	border: 1px solid #D8D8D8;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	margin-left:30px;
+	
+	-moz-box-shadow: 2px 2px 6px 0px #999999;
+	-webkit-box-shadow: 2px 2px 6px 0px #999999;
+	box-shadow: 2px 2px 6px 0px #999999;
+	
+}
+
+	.pop-bottom .pop-bottom-wrapper
+	{
+		margin:10px 0px 0px 10px;
+	}
+	
+	.pop-bottom .pop-enterEmailDescript
+	{
+			font-family: "Lucida Grande", Helvetica, Arial, Verdana, Geneva, sans-serif;
+			font-size:11px;
+			font-weight: 900;
+			color: #545454;
+			margin-bottom: 4px;
+	}
+	
+		.pop-bottom .pop-email
+		{
+			height: 30px;
+			width: 223px;
+				
+				color: #0E65AB;
+				font-size: 15px;
+				padding-left: 8px;
+				
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;	
+			
+			margin-right:13px;		
+		}
+
+
+			.pop-bottom .pop-submit
+			{
+				height: 33px;
+				width:  121px;
+				 cursor: pointer;
+
+					background:#C0E0F7;
+				   	   background: -moz-linear-gradient(top, #E7F5FD, #C0E0F7);
+					background: -webkit-linear-gradient(top, #E7F5FD, #C0E0F7);
+							background: linear-gradient(top, #E7F5FD, #C0E0F7);
+
+					
+					   -moz-border-radius:6px;
+					-webkit-border-radius:6px;
+							border-radius:6px;
+					
+					border:1px solid #CDCDCD;
+					display:inline-block;
+					
+					color: #343434;
+				
+					font-size:14px;
+					font-weight:bold;
+					text-decoration:none;
+					text-shadow:1px 1px 0px #ffffff;
+			 
+				   -moz-box-shadow: 2px 2px 6px 0px #B7B7B7;;
+				-webkit-box-shadow: 2px 2px 6px 0px #B7B7B7;
+						box-shadow: 2px 2px 6px 0px #B7B7B7;
+			}
+				
+				.pop-submit:hover
+				{
+					color: #0E65AC;
+					
+						background:#AECBE0;
+					   	   background: -moz-linear-gradient(bottom, #E7F5FD, #C0E0F7);
+						background: -webkit-linear-gradient(bottom, #E7F5FD, #C0E0F7);
+								background: linear-gradient(bottom, #E7F5FD, #C0E0F7);
+				}
+					.pop-submit:active
+					{
+						color: #343434;
+					}
+			
+		
+
+
+/*
+behavior: url(path/to/PIE.htc);
+*/
+
+/*** START labels.css  ****/
+	.pop-input {
+		display: inline-block;
+	}
+	.pop-input span {
+	  position: absolute;
+	  padding: 10px 0px 0px 8px;
+	  margin-left: 2px;
+	  color: #999;
+
+	  z-index: 1;
+	  cursor: text;
+	}
+	.pop-input input, .pop-input textarea, .pop-input select {
+	  z-index: 0;
+
+	  margin: 0;
+	  font: inherit;
+	}
+	/* Hack to remove Safari's extra padding. Remove if you don't care about pixel-perfection. */
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    .input input, .input textarea, .input select { padding: 4px; }
+	}
+/*** END labels.css  ****/
