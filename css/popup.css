@@ -72,7 +72,7 @@ body
 		background: -moz-linear-gradient(top, #FAFAFA, #F1F1F1);
 		background: -webkit-linear-gradient(top, #FAFAFA, #F1F1F1);
 		background: linear-gradient(top, #FAFAFA, #F1F1F1);
-
+		
 		border: 1px solid #D8D8D8;
 		-moz-border-radius: 3px;
 		-webkit-border-radius: 3px;
@@ -82,8 +82,11 @@ body
 		-webkit-box-shadow: 2px 2px 6px 0px #999999;
 		box-shadow: 2px 2px 6px 0px #999999;
 		
-		margin: 17px 0px 0px -10px;		
+		margin: 17px 0px 0px -10px;	
+			overflow: hidden;
 	}
+	
+	
 	
 		
 		.pop-top .pop-title-info .pop-couponInfo
@@ -93,18 +96,11 @@ body
 			border-right:1px solid #D8D8D8;
 			padding:0px 12px 0px 12px;
 			margin-right:12px;
+			font-size:14px;
 
+			width: 270px;							
 		}
 		
-			.pop-top .pop-couponInfo .textfillCouponInfo
-			{
-				height: 40px;
-				width: 270px;	
-				white-space: nowrap;
-				overflow:hidden; /* not sure if this is the best solution, just cuts stuff off that wraps around*/
-								/* should probably do this in rails and make it go '...' instead of using css3 for '...', so old browsers see it*/
-				text-overflow: ellipsis;
-			}
 		
 		.pop-top .pop-title-info .pop-storeName
 		{

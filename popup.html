@@ -24,23 +24,44 @@
  				<script src="js/jquery.textfill.min.js">//for coupon-code size, depending on length</script>				
 				<script type="text/javascript">				
 					$(document).ready(function() {	//for coupon-code size, depending on length
-					    $('.textfillCode').textfill({ maxFontPixels: 70 });							
-					    $('.textfillCouponInfo').textfill({ minFontPixels: 11 });		
-					});	//ah
+					    $('.textfillCode').textfill({ maxFontPixels: 70 });	
+						
+						var codeLen = jQuery('.couponInfo-layout').text().length;
+						if((codeLen > 60) && (codeLen < 100)) //changes layout based on how long the title is
+						{
+							$('.pop-title-info').css('height', 42);
+							$('.pop-title-info').css('margin-top', 0);
+							$('.pop-couponInfo').css('line-height', '21px');
+							$('.pop-storeName').css('line-height', '41px');						
+						}
+						if(codeLen > 100)
+						{
+							$('.pop-title-info').css('height', 62);
+							$('.pop-title-info').css('margin-top', -10);
+							$('.pop-couponInfo').css('line-height', '21px');
+							$('.pop-storeName').css('line-height', '65px');	
+							$('.pop-storeName').css('line-height', '65px');	
+							$('.pop-couponInfo').css('font-size', 13);	
+							
+						}						
+																					    
+					});	
 				</script>
 			
 			<link href="css/popup.css" rel="stylesheet" type="text/css">
 		
-		<title>Coupon Dudes | Keeping your wallet nourished</title>		
+		<title>Coupon Dudes | Great Deals</title>		
 	</head>
 		<body>
 	 	<div class="wrapper">			
 				<div class="pop-top">
 					<div class="pop-title-info">
 						<div class="pop-couponInfo">
-							<div class="textfillCouponInfo">
-								<span>Escape For Summer & Save Up To 35%!</span>
-							</div><!-- textfillCouponInfo -->
+							
+							 <span class="couponInfo-layout">
+								Escape for Summer & Save up to 35%!
+							</span>
+							
 						</div><!-- pop-couponInfo -->
 						<div class="pop-storeName">							
 							<h4>Expedia</h4>
