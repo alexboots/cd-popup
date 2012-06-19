@@ -24,9 +24,8 @@
  				<script src="js/jquery.textfill.min.js">//for coupon-code size, depending on length</script>				
 				<script type="text/javascript">				
 					$(document).ready(function() {	//for coupon-code size, depending on length
-					    $('.textfillCode').textfill({ maxFontPixels: 70 });					
-					    $('.textfilleStoreName').textfill({  });			
-					    $('.textfillCouponInfo').textfill({  });		
+					    $('.textfillCode').textfill({ maxFontPixels: 70 });							
+					    $('.textfillCouponInfo').textfill({ minFontPixels: 11 });		
 					});	//ah
 				</script>
 			
@@ -39,22 +38,43 @@
 				<div class="pop-top">
 					<div class="pop-title-info">
 						<div class="pop-couponInfo">
-							Escape For Summer & Save Up To 35%!
-						</div>
-						<div class="pop-storeName">
-							
+							<div class="textfillCouponInfo">
+								<span>Escape For Summer & Save Up To 35%!</span>
+							</div><!-- textfillCouponInfo -->
+						</div><!-- pop-couponInfo -->
+						<div class="pop-storeName">							
 							<h4>Expedia</h4>
 						</div>					
 					</div><!-- pop-title-info --> 
 					
 						<div class='pop-code'>
 							<div class="textfillCode">
-								<span>DEALIOSUPER</span>
+								<div class="textfillCode">
+									<span>DEALIOSUPER</span>
+								</div>	
+									<!-- IF = ACTIVATE, USE THE FOLLOWING HTML
+									 
+										<div class="pop-activate-img">		
+											<img src="images/deal_activated.png">											
+										</div>  
+										
+										END activate image -->
+										
+										
 							</div><!-- textfill -->
+							
+								
+									<!-- or show 'activated' image here -->
 							
 						</div><!-- pop-code-->
 						<div class="pop-code-descript">
 							Enter code at checkout to activate discount
+
+								<!-- IF = ACTIVATE, USE THE FOLLOWING 
+								
+										The deal is automatically applied at checkout
+									-->									
+								
 						</div><!-- pop-code-descript -->
 					
 					
