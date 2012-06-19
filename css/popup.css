@@ -92,9 +92,12 @@ body
 		.ie7 .pop-storeName,
 		.ie7 .pop-couponInfo
 		{
+			/*
 			margin-top: 30px;
 			margin-bottom: 40px;
 			overflow: visible;
+				this is needed when testing locally but not when its online, so we'll see
+			*/
 		}
 		
 	
