@@ -14,6 +14,7 @@ html, body
 	font-family: Helvetica, Arial, "Lucida Grande", Verdana, Geneva, sans-serif;
 	Helvetica, Arial, , sans-serif; 
 	   font-weight: 300;
+	color: #0D65AC;
 }
 
 @font-face {
@@ -84,9 +85,18 @@ body
 		
 		margin: 17px 0px 0px -10px;	
 			overflow: hidden;
+			
+		behavior: url(PIE/PIE.htc);
 	}
-	
-	
+		.ie7 .pop-title-info,
+		.ie7 .pop-storeName,
+		.ie7 .pop-couponInfo
+		{
+			margin-top: 30px;
+			margin-bottom: 40px;
+			overflow: visible;
+		}
+		
 	
 		
 		.pop-top .pop-title-info .pop-couponInfo
@@ -100,6 +110,8 @@ body
 
 			width: 270px;							
 		}
+		
+		
 		
 		
 		.pop-top .pop-title-info .pop-storeName
@@ -160,6 +172,7 @@ body
 	-webkit-box-shadow: 2px 2px 6px 0px #999999;
 	box-shadow: 2px 2px 6px 0px #999999;
 	
+	behavior: url(PIE/PIE.htc);
 }
 
 	.pop-bottom .pop-bottom-wrapper
@@ -189,9 +202,18 @@ body
 			-webkit-border-radius: 4px;
 			border-radius: 4px;	
 			
-			margin-right:13px;		
+			margin-right:13px;	
+			
+			behavior: url(PIE/PIE.htc);	
 		}
 
+			.ie7 .pop-bottom .pop-email,
+			.ie8 .pop-bottom .pop-email
+			{
+				padding-top:8px;
+				height: 22px;
+			}
+			
 
 			.pop-bottom .pop-submit
 			{
@@ -219,9 +241,11 @@ body
 					text-decoration:none;
 					text-shadow:1px 1px 0px #ffffff;
 			 
-				   -moz-box-shadow: 2px 2px 6px 0px #B7B7B7;;
+				   -moz-box-shadow: 2px 2px 6px 0px #B7B7B7;
 				-webkit-box-shadow: 2px 2px 6px 0px #B7B7B7;
 						box-shadow: 2px 2px 6px 0px #B7B7B7;
+						
+				behavior: url(PIE/PIE.htc);		
 			}
 				
 				.pop-submit:hover
@@ -232,7 +256,10 @@ body
 					   	   background: -moz-linear-gradient(bottom, #E7F5FD, #C0E0F7);
 						background: -webkit-linear-gradient(bottom, #E7F5FD, #C0E0F7);
 								background: linear-gradient(bottom, #E7F5FD, #C0E0F7);
+				
+					behavior: url(PIE/PIE.htc);
 				}
+				
 					.pop-submit:active
 					{
 						color: #343434;
@@ -242,7 +269,7 @@ body
 
 
 /*
-behavior: url(path/to/PIE.htc);
+
 */
 
 /*** START labels.css  ****/
