@@ -22,29 +22,9 @@
 		<script src="js/labels.js" type="text/javascript">/*for placeholder text*/</script>		
 					
  				<script src="js/jquery.textfill.min.js">//for coupon-code size, depending on length</script>				
-				<script type="text/javascript">				
-					$(document).ready(function() {	//for coupon-code size, depending on length
-					    $('.textfillCode').textfill({ maxFontPixels: 70 });	
-						
-						var codeLen = jQuery('.couponInfo-layout').text().length;
-						if((codeLen > 60) && (codeLen < 100)) //changes layout based on how long the title is
-						{
-							$('.pop-title-info').css('height', 42);
-							$('.pop-title-info').css('margin-top', 0);
-							$('.pop-couponInfo').css('line-height', '21px');
-							$('.pop-storeName').css('line-height', '41px');						
-						}
-						if(codeLen > 100)
-						{
-							$('.pop-title-info').css('height', 62);
-							$('.pop-title-info').css('margin-top', -10);
-							$('.pop-couponInfo').css('line-height', '21px');
-							$('.pop-storeName').css('line-height', '65px');	
-							$('.pop-storeName').css('line-height', '65px');	
-							$('.pop-couponInfo').css('font-size', 13);								
-						}																											    
-					});	
-				</script>
+				<script src="js/layout-change.js">//chnage layout based on 'coupon info' length</script>				
+
+		 
 			
 			<link href="css/popup.css" rel="stylesheet" type="text/css">
 		
@@ -57,7 +37,7 @@
 						<div class="pop-couponInfo">
 							
 							 <span class="couponInfo-layout">
-								Escape for Summer & Save up to 35%! 
+								Escape for Summer & Save up to 35%!
 
 							</span>
 							
