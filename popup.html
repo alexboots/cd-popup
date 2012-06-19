@@ -11,7 +11,6 @@
 			 *
 			 *		height: 460px
 			 *		 width: 299px
-			 *
 			 */
 		</script>
 
@@ -20,10 +19,17 @@
 		
 		<script src="http://www.google.com/jsapi" type="text/javascript">/*for placeholder text*/</script>
 	    <script type="text/javascript">google.load("jquery", "1");/*for placeholder text*/</script>
-		
-		
 		<script src="js/labels.js" type="text/javascript">/*for placeholder text*/</script>		
-		
+					
+ 				<script src="js/jquery.textfill.min.js">//for coupon-code size, depending on length</script>				
+				<script type="text/javascript">				
+					$(document).ready(function() {	//for coupon-code size, depending on length
+					    $('.textfillCode').textfill({ maxFontPixels: 70 });					
+					    $('.textfilleStoreName').textfill({  });			
+					    $('.textfillCouponInfo').textfill({  });		
+					});	//ah
+				</script>
+			
 			<link href="css/popup.css" rel="stylesheet" type="text/css">
 		
 		<title>Coupon Dudes | Keeping your wallet nourished</title>		
@@ -36,12 +42,16 @@
 							Escape For Summer & Save Up To 35%!
 						</div>
 						<div class="pop-storeName">
+							
 							<h4>Expedia</h4>
 						</div>					
 					</div><!-- pop-title-info --> 
 					
-						<div class="pop-code">
-							<h1>DEAL120SUPER</h1>
+						<div class='pop-code'>
+							<div class="textfillCode">
+								<span>DEALIOSUPER</span>
+							</div><!-- textfill -->
+							
 						</div><!-- pop-code-->
 						<div class="pop-code-descript">
 							Enter code at checkout to activate discount

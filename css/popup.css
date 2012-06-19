@@ -94,9 +94,10 @@ body
 			padding:0px 12px 0px 12px;
 			margin-right:12px;
 		}
+		
 		.pop-top .pop-title-info .pop-storeName
 		{
-			color: #0E65AC;		
+			color: #0E65AC;	
 		}
 
 	
@@ -106,19 +107,23 @@ body
 		color: #668C1F;
 		font-family: 'LeagueGothicRegular', "Trebuchet MS", Helvetica, Arial, "Lucida Grande", Verdana, Geneva, sans-serif;
 		text-align: center;
-	
+		margin-left: 33px;
 	}
-		
+		.pop-top .pop-code .textfillCode
+		{
+			  width:318px; 
+			  height:68px;			  
+		}
+
 
 		.pop-top .pop-code-descript
 		{
-
 			text-align: center;
 			color: #545454;
-			font-size:15px;
+			font-size:14px;
 			font-family: "Trebuchet MS", Helvetica, Arial, "Lucida Grande", Verdana, Geneva, sans-serif;
 			font-style: italic;
-			margin-top: 11px;
+			margin-top: 0px;
 		}
 	
 .pop-bottom
